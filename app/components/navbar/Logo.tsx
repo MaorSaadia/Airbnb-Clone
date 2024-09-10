@@ -2,22 +2,20 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import React from "react";
 
-function Logo() {
+const Logo = () => {
   const router = useRouter();
 
   return (
-    <div onClick={() => router.push("/")}>
-      <Image
-        alt="logo"
-        className="hidden md:block cursor-pointer"
-        height="100"
-        width="100"
-        src="/assets/logo.png"
-      />
-    </div>
+    <Image
+      onClick={() => router.push("/")}
+      alt="Logo"
+      className="hidden md:block cursor-pointer"
+      height={100}
+      width={100}
+      src="/images/logo.png"
+    />
   );
-}
+};
 
 export default Logo;
