@@ -9,7 +9,7 @@ function Avatar() {
       height="30"
       width="30"
       alt="noUser"
-      src="/assets/avatar.png"
+      src="/images/avatar.png"
     />
   );
 }
